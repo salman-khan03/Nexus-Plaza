@@ -1,0 +1,50 @@
+.location-card {
+  position: relative;
+  text-align: left;
+  background: linear-gradient(160deg, var(--panel), var(--panel-2));
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 1.5rem;
+  color: var(--text);
+  overflow: hidden;
+  transition: transform 0.18s ease, border-color 0.18s ease, box-shadow 0.18s ease;
+}
+
+.location-card::before {
+  content: '';
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 4px;
+  background: var(--accent);
+  opacity: 0.85;
+}
+
+.location-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--accent);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4), 0 0 0 1px var(--accent);
+}
+
+.location-card__emoji {
+  font-size: 2.6rem;
+  display: block;
+  margin-bottom: 0.6rem;
+}
+
+.location-card__name {
+  font-size: 1.25rem;
+  margin-bottom: 0.4rem;
+}
+
+.location-card__tagline {
+  color: var(--text-dim);
+  font-size: 0.95rem;
+  line-height: 1.45;
+  margin: 0 0 1.2rem;
+}
+
+.location-card__enter {
+  font-weight: 700;
+  color: var(--accent);
+  font-size: 0.95rem;
+}

@@ -1,0 +1,50 @@
+.back-link {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  color: var(--text-dim);
+  font-weight: 600;
+}
+
+.back-link:hover {
+  color: var(--accent);
+}
+
+.location-hero {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.location-hero__emoji {
+  font-size: 3.4rem;
+  line-height: 1;
+}
+
+.location-hero__name {
+  font-size: clamp(1.8rem, 5vw, 2.6rem);
+  color: var(--accent);
+}
+
+.location-hero__tagline {
+  color: var(--text-dim);
+  margin: 0.3rem 0 0;
+  font-size: 1.05rem;
+}
+
+.location-hero__desc {
+  color: var(--text);
+  line-height: 1.65;
+  max-width: 720px;
+  margin: 0 0 2.5rem;
+}
+
+.location-details section {
+  margin-bottom: 2.5rem;
+}
+
+.event-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.4rem;
+}
